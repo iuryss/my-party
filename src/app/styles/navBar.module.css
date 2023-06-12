@@ -1,0 +1,41 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #000000;
+    padding: 1em;
+    border-bottom: #fff 1px solid;
+    margin-inline: 5rem;
+    margin-top: 2rem;
+  }
+  
+  .leftItems {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .logo {
+    font-weight: bold;
+    font-size: 2em;
+    margin-right: 2em;
+  }
+  
+  .navItem {
+    margin-right: 4em;
+  }
+
+  .customButton {
+    padding: 0.6em 2.4em;
+    background-color: #4e0f72d9;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .rightItems {
+    display: flex;
+    align-items: center;
+  }
+  

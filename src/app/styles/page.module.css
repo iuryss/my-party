@@ -1,10 +1,71 @@
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 6rem;
   min-height: 100vh;
+  scrollbar-width: none;
+}
+
+.leftContent {
+  display: flex;
+  /* background-color: red; */
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 50vh;
+  min-width: 50vh;
+  margin-left: 2em;
+  margin-top: 5em;
+}
+
+.emailInput,
+.passwordInput {
+  padding: 8px;
+  border: 1px solid #464646d9;
+  background-color: var(--foreground-rgb);
+  border-radius: 4px;
+  min-width: 24em;
+  margin-top: 1.2em
+}
+
+.forgotPasswordText {
+  font-size: 0.6em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  align-self: flex-end;
+  color: #fff;
+}
+
+.forgotPasswordText:hover {
+  color: #5e5e5e;
+  cursor: pointer;
+}
+
+.loginTitle {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.buttonLogin {
+  padding: 1em 10.7em;
+  background-color: #4e0f72d9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.containerButton {
+  display: flex;
+  align-items: center;
+}
+
+
+.divider {
+  border-left: 1px #fff solid;
+  min-height: 80vh;
+  margin-right: 0em;
 }
 
 .description {
