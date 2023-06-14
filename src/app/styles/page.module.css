@@ -15,7 +15,18 @@
   align-items: flex-start;
   min-height: 50vh;
   min-width: 50vh;
-  margin-left: 2em;
+  margin-left: 4em;
+  margin-top: 5em;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  min-width: 50vh;
+  margin-right: 4em;
   margin-top: 5em;
 }
 
@@ -37,18 +48,36 @@
   color: #fff;
 }
 
+.signUpText {
+  font-size: 1em;
+  font-weight: 100;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  align-self: center;
+  color: #fff;
+}
+
+.signUpText:hover{
+  color: #5e5e5e;
+  cursor: pointer;
+}
+
 .forgotPasswordText:hover {
   color: #5e5e5e;
   cursor: pointer;
 }
 
 .loginTitle {
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: 300;
 }
 
 .buttonLogin {
   padding: 1em 10.7em;
+}
+
+.buttonLogin,
+.buttonAbout {
   background-color: #4e0f72d9;
   color: white;
   border: none;
@@ -56,7 +85,26 @@
   cursor: pointer;
 }
 
+.buttonAbout {
+  padding: 1em 5em;
+}
+
+.buttonGoogle {
+  display: flex;
+  align-items: center;
+  width: 24.1em;
+  height: 3em;
+  background-color: #ffffffd9;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  padding-right: 2.5em;
+  cursor: pointer;
+}
 .containerButton {
+  margin-top: 0.5em;
   display: flex;
   align-items: center;
 }
@@ -65,7 +113,7 @@
 .divider {
   border-left: 1px #fff solid;
   min-height: 80vh;
-  margin-right: 0em;
+  margin-left: 2em;
 }
 
 .description {
