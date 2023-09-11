@@ -15,23 +15,23 @@ export default function Login() {
 
   return (
     <>
-    <Navbar />
-    <main className={styles.main}>
-      <div className={styles.leftContent}>
-          <h1 className={styles.loginTitle}>Acesse sua Conta</h1>
-          <input placeholder='E-mail' className={styles.emailInput} />
-          <input placeholder='Senha' className={styles.passwordInput} />
-          <span className={styles.forgotPasswordText}>Esqueceu a senha?</span>
-          <Button containerClass={styles.containerButton} buttonClass={styles.buttonLogin} buttonText={'Entrar'}/>
-          <Button containerClass={styles.containerButton} buttonClass={styles.buttonGoogle} buttonText={'Entrar com Google'} buttonIcon={googleIcon}/>
-          <span className={styles.signUpText}>Não possui conta? <b>Cadastre-se</b></span>
-      </div>
-      <hr className={styles.divider} />
-      <div className={styles.rightContent}>
-          <CardSlider photos={eventsPhotos} />
-          <Button containerClass={styles.containerButton} buttonClass={styles.buttonAbout} buttonText={'Saiba Mais'}/>
-      </div>
-    </main>
+      <Navbar />
+      <main className={styles.main}>
+        <div className={styles.leftContent}>
+            <h1 className={styles.loginTitle}>Acesse sua Conta</h1>
+            <input placeholder='E-mail' className={styles.emailInput} />
+            <input placeholder='Senha' className={styles.passwordInput} />
+            <span className={styles.forgotPasswordText}>Esqueceu a senha?</span>
+            <Button containerClass={styles.containerButton} buttonClass={styles.buttonLogin} buttonText={'Entrar'}/>
+            <Button containerClass={styles.containerButton} buttonClass={styles.buttonGoogle} buttonText={'Entrar com Google'} buttonIcon={googleIcon}/>
+            <span className={styles.signUpText}>Não possui conta? <b>Cadastre-se</b></span>
+        </div>
+        <hr className={styles.divider} />
+        <div className={styles.rightContent}>
+            <CardSlider photos={eventsPhotos} />
+            <Button containerClass={styles.containerButton} buttonClass={styles.buttonAbout} buttonText={'Saiba Mais'}/>
+        </div>
+      </main>
     </>
   )
 }

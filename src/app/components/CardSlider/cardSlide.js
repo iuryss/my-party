@@ -23,19 +23,18 @@ const CardSlider = ({ photos }) => {
   return (
     <div className={styles.cardSlider}>
       <div className={styles.card}>
-      <div {...handlers}>
-        <img
-          className={styles.cardImage}
-          src={photos[currentSlide]}
-          alt="Slide"
-        />
-        <button className={styles.prevButton} onClick={prevSlide}>
-          Previous
-        </button>
-        <button className={styles.nextButton} onClick={nextSlide}>
-          Next
-        </button>
-        
+        <div {...handlers}>
+          <img
+            className={styles.cardImage}
+            src={photos[currentSlide]}
+            alt="Slide"
+          />
+          <button className={styles.prevButton} onClick={prevSlide}>
+            Previous
+          </button>
+          <button className={styles.nextButton} onClick={nextSlide}>
+            Next
+          </button>
         </div>
       </div>
       <div className={styles.dots}>
