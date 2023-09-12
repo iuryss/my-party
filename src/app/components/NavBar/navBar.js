@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className={styles.navItem}>Eventos</div>
         <div className={styles.navItem}>Organize</div>
       </div>
-      <Button containerClass={styles.rightItems} buttonClass={styles.customButton} buttonText={'Entrar'} />
+      <Button buttonClass={styles.customButton} buttonText={'Entrar'}  />
     </nav>
   );
 };
