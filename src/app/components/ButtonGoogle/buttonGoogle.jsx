@@ -4,14 +4,14 @@ import React from "react";
 import Image from "next/image";
 import { ButtonContainer, LoginScreenButton } from "./styles";
 
-const Button = (props) => {
+const ButtonGoogle = (props) => {
   const handleClick = () => {
     console.log('Botão clicado!', props);
   };
 
     return(
         <ButtonContainer>
-          <LoginScreenButton onClick={handleClick} padding={props.padding} radius={props.radius}>
+          <LoginScreenButton onClick={handleClick}>
             {props.buttonIcon ? 
               <Image width={30} style={{marginRight: 10}} src={props.buttonIcon} /> 
             : 
@@ -23,4 +23,4 @@ const Button = (props) => {
     )
 }
 
-export default Button;
+export default ButtonGoogle;
