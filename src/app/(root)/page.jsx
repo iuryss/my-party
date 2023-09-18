@@ -17,7 +17,7 @@ export default function Login() {
 
   return (
     <>
-      <Navbar />
+      <Navbar firstItem={'Eventos'} secondItem={'Revenda'} />
       <main className={styles.main}>
         <div className={styles.leftContent}>
             <h1 className={styles.loginTitle}>Acesse sua Conta</h1>
