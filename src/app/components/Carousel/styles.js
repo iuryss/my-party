@@ -5,28 +5,64 @@ export const CardSlider = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 55vh;
+    height: 58vh;
 }
 `
 export const Card = styled.div`
     position: relative;
     width: 80rem;
     height: 190rem;
-    overflow: hidden;
-    border: 1px solid #636363;
+    padding-inline: 0.2em;
 }
 `
 export const CardImage = styled.img`
-    width: 100%;
+    width: 72%;
     height: 25em;
+    border-radius: 0em 2em 2em 0em;
     object-fit: cover;
+    // z-index: 999;
     -webkit-user-drag: none;
 }
 `
+export const CardTextArea = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%; /* Use uma unidade relativa (por exemplo, %) para o padding */
+    text-align: center;
+    // z-index: -1;
+}
+`
+export const CardText = styled.span`
+    font-size: 1.5em;
+}
+`
+export const PurchaseButton = styled.button`
+    background-color: #4e0f72d9;
+    // z-index: 2;
+    color: white;
+    border: none;
+    border-radius: 2em;
+    padding: 1em 4em; 
+    cursor: pointer;
+    &:hover {
+        background-color: #8520BF;
+      }
+}
+`
+
 export const PrevButton = styled.button`
     position: absolute;
     top: 60%;
-    left: 10px;
+    left: 1em;
     background-color: transparent;
     padding: 8px 16px;
     border: none;

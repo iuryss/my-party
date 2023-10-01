@@ -9,7 +9,7 @@ export const ButtonContainer = styled.div`
 export const LoginScreenButton = styled.button`
     background-color: #4e0f72d9;
     color: white;
-    border: none;
+    border: #fff 1px solid;
     border-radius: ${(props) => props.radius};
     cursor: pointer;
     padding: ${(props) => props.padding};

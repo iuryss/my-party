@@ -2,11 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    background-color: #000000;
+    background-color: #0C0C0C;
     padding: 1em;
-    border-bottom: #fff 1px solid;
-    margin-inline: 5rem;
+    border-bottom: #fff 2px solid;
+    margin-inline: 6rem;
     margin-top: 2rem;
+  }
+
+  .navBar div {
+    color: #fff
   }
   
   .leftItems {

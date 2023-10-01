@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
-import {CardSlider, Card, CardImage, PrevButton, NextButton, Dots, Dot, DotSelected} from './styles'
+import {CardSlider, Card, CardImage, PrevButton, NextButton, Dots, Dot, DotSelected, CardTextArea, PurchaseButton} from './styles'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
@@ -33,9 +33,12 @@ const Carousel = ({ photos }) => {
         <div {...handlers}>
           <CardImage
             src={photos[currentSlide]}
-            alt="Slide"
+            alt="Events"
           />
         </div>
+          <CardTextArea>
+            <PurchaseButton>Comprar ingresso</PurchaseButton>
+          </CardTextArea>
         {/* <textarea
         placeholder="Escreva um texto sobre a imagem..."
         value={texto}

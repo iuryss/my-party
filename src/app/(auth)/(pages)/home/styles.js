@@ -5,8 +5,17 @@ export const MainContainer = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 6rem;
-    min-height: 100vh;
-    scrollbar-width: none;
+    padding: 6.5rem;
+    min-height: 0vh;
+}
+`
+export const PartysContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.5rem;
+    padding-top: 2em;
+    // background-color: green;
 }
 `
