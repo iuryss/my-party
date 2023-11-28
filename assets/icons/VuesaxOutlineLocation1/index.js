@@ -1,0 +1,1 @@
+export { VuesaxOutlineLocation1 } from "./VuesaxOutlineLocation1";

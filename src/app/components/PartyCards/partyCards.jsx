@@ -1,10 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { useSwipeable } from 'react-swipeable';
 import {CardParty, Card, CardImage, CardContent, ContentDate, PartyName, Organizer} from './styles'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 const PartyCards = (props) => {
 

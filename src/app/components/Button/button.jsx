@@ -11,7 +11,7 @@ const Button = (props) => {
 
     return(
         <ButtonContainer>
-          <LoginScreenButton onClick={props.onClick} padding={props.padding} radius={props.radius}>
+          <LoginScreenButton onClick={props.onClick} padding={props.padding} buttonColor={props.buttonColor} radius={props.radius} border={props.border} color={props.color}>
             {props.buttonIcon ? 
               <Image width={30} style={{marginRight: 10}} src={props.buttonIcon} /> 
             : 
