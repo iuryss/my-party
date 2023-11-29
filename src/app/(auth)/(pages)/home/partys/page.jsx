@@ -7,7 +7,7 @@ import SearchBar from '../../../../components/SearchBar/searchBar';
 import PartyCards from '../../../../components/PartyCards/partyCards';
 import {ContainerInfo, MainContainer, SectionMyParty, TitleInfo, TextInfo, ButtonSection, SectionCards,
 CardsSectionTitle, TitleArea, SectionPartys, SectionHeader, SectionRateUs, ImageBackground, PartysDescription,
-SectionTitle, StyledTicket, Frame, VuesaxOutline, TerAFeira, Frame2, VuesaxOutlineLocation, RuaLoremipsum,FieldEmail, OverlapGroup, TextWrapper3, CTA, TextWrapper4, Copyright, TextWrapper5, TicketContainer, SectionTicket, CardPuchaseTItle, ContainerCardsTicket, Div, Column, Card, TitleContainer, SpaceContainer, TicketTipe, PriceTicket, OfferDescription, OfferDescription2, Div2, Column2, Card2, OfferDescription4, Div3, Button2, Column3, Card3, OfferDescription5, OfferDescription6, Div4, Button1} from './styles'
+SectionTitle, StyledTicket, Frame, VuesaxOutline, TerAFeira, Frame2, VuesaxOutlineLocation, RuaLoremipsum,FieldEmail, OverlapGroup, TextWrapper3, CTA, TextWrapper4, Copyright, TextWrapper5, TicketContainer, SectionTicket, CardPuchaseTItle, ContainerCardsTicket, Div, Column, Card, TitleContainer, SpaceContainer, TicketTipe, PriceTicket, OfferDescription, OfferDescription2, Div2, Column2, Card2, OfferDescription4, Div3, Button2, Column3, Card3, OfferDescription5, OfferDescription6, Div4, Button1, CheckItemsContainer, MapArea} from './styles'
 import Link from "next/link";
 import { defaultTexts } from "../../../../../../utils/texts";
 import Button from "../../../../components/Button/button";
@@ -16,8 +16,10 @@ import CardsEvents from "../../../../components/Cards/index.jsx";
 import CardRateUs from "../../../../components/CardRateUs/index.jsx";
 import EastIcon from '@mui/icons-material/East';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
-import Checkbox from '@mui/material/Checkbox';
+// import Checkbox from '@mui/material/Checkbox';
 import Footer from '../../../../components/Footer/footer.jsx';
+import CheckItems from '../../../../components/CheckItem/CheckItem.jsx';
+import Map from "../../../../components/Map/map.jsx";
 
 
 export default function partys () {
@@ -45,6 +47,30 @@ export default function partys () {
         imageUrl: 'caminho_da_imagem_1.jpg',
       },
    ];
+
+   const cardsData = [
+    {
+      text: 'Noite inteira',
+    },
+    {
+      text: 'OpenBar',
+    },
+    {
+      text: 'Alimentação',
+    },
+    {
+      text: 'Atrações em alta',
+    },
+    {
+      text: 'Dance-off with a star guest',
+    },
+ ];
+
+ const location = {
+  address: '1600 Amphitheatre Parkway, Mountain View, california.',
+  lat: 37.42216,
+  lng: -122.08427,
+}
 
     return(
         <>
@@ -84,6 +110,14 @@ export default function partys () {
                     </Frame2>
                   </TicketContainer>
                 </StyledTicket>
+                <CheckItemsContainer>
+                {cardsData.map((card, index) => (
+                  <CheckItems
+                    key={index}
+                    text={card.text}
+                  />
+               ))}
+              </CheckItemsContainer>
               </PartysDescription>
             </SectionHeader>
           </SectionPartys>
@@ -144,6 +178,12 @@ export default function partys () {
         </Div>
       </ContainerCardsTicket>
     </SectionTicket>
+         <TitleArea>
+            <CardsSectionTitle>LOCALIZAÇÃO</CardsSectionTitle>
+          </TitleArea>
+          <MapArea>
+            <Map location={location}/>
+          </MapArea>
           <Footer />
         </>
     )

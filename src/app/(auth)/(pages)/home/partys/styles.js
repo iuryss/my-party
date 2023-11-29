@@ -89,7 +89,7 @@ export const CardsSectionTitle = styled.h1`
     margin-bottom: 0.5em;
     color: #C857A6;
     text-align: center;
-    font-family: 'Jolly Lodger';
+    font-family: 'Jolly Lodger', cursive;
     font-weight: 400;
     font-size: 58px;
 }
@@ -109,11 +109,23 @@ export const PartysDescription = styled.div`
 `
 export const TitleArea = styled.div`
     display: flex;
-    padding-top: 4.8em;
     align-items: center;
+    padding-top: 4.8em;
     justify-content: center;
 }
 `
+export const MapArea = styled.div`
+    display: flex;
+    margin-inline: 10em;
+    margin-bottom: 10em;
+}
+`
+
+export const MapContainer = styled.div`
+  width: 100%;
+  height: 400px;
+`;
+
 export const CardsContainer = styled.div`
     display: flex;
     width: 100%;
@@ -212,6 +224,14 @@ export const StyledTicket = styled.div`
   margin-top: 2.2em;
 `;
 
+export const CheckItemsContainer = styled.div`
+  display: flex;
+  margin-top: 2em;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;
+
 export const Frame = styled.div`
   align-items: center;
   border-bottom: 2px solid #000000;
@@ -296,7 +316,7 @@ export const CardPuchaseTItle = styled.div`
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-  font: 400 58px/81px "Joti One", display;
+  font: 400 58px/81px 'Jolly Lodger', cursive;
   @media (max-width: 991px) {
     max-width: 100%;
     font-size: 40px;
@@ -454,6 +474,7 @@ export const Button1 = styled.button`
   @media (max-width: 991px) {
     white-space: initial;
   }
+  cursor: pointer;
 `;
 
 export const Column2 = styled.div`
