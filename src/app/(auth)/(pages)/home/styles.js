@@ -4,7 +4,7 @@ export const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 0vh;
 }
 `
@@ -13,10 +13,20 @@ export const PartysContainer = styled.div`
     margin-top: 5em;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 `
+export const ContainerSearchBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    min-height: 0vh;
+}
+`
+
 export const SectionMyParty = styled.div`
     display: flex;
     flex-direction: column;
@@ -57,8 +67,10 @@ export const SectionCards = styled.div`
     display: flex;
     flex-direction: row;
     background-color: #fff;
-    min-height: 30em;
+    min-height: 40em;
+    width: 100%;
     align-items: center;
+    justify-content: center;
 }
 `
 export const SectionPartys = styled.div`
@@ -157,5 +169,5 @@ export const SectionRateUs = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #eee1ff;
-  min-height: 10em;
+  min-height: 20em;
 `;

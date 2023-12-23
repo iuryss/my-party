@@ -1,25 +1,66 @@
-import React, { useState } from "react";
-import cardImage from "../../../../assets/photo2.jpg";
-import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import { Button, Card, Text, CardContent, CardImage, RightArrow, ArrowBody, ArrowHead, BottomContent, TitleText, DescriptionText } from "./styles";
+import React from "react";
+import styled from "styled-components";
 
-const CardRateUs = (props) => {
-
+function cardRateUs(props) {
   return (
-    <Card>
-      <CardImage
-        src={'https://img.freepik.com/free-psd/saturday-night-party-social-media-instagram-template_505751-3745.jpg?w=740&t=st=1694994819~exp=1694995419~hmac=d584670f0722f4044a6da3d30d254909a2258cf042d6016f92e3e0f80258d2cd'}
-        alt="Descrição da imagem"
-        className="card-image"
-      />
-      <CardContent>
-        <TitleText>{props.title}</TitleText>
-        <Text>{props.location}</Text>
-        <DescriptionText>{props.description}</DescriptionText>
-      </CardContent>
-    </Card>
+    <Container>
+      <Content>
+        <Image loading="lazy" srcSet={props.imageUrl}/>
+        <EventName>{props.title}</EventName>
+        <Location>{props.location}</Location>
+        <Description>
+        {props.description}
+        </Description>
+      </Content>
+    </Container>
   );
-};
+}
 
-export default CardRateUs;
+const Container = styled.div`
+  justify-content: center;
+  border-radius: var(--Curvatura, 24px);
+  background-color: #1b1b1b;
+  display: flex;
+  max-width: 426px;
+  flex-direction: column;
+  margin: 1.9em;
+`;
+
+const Content = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 29px 31px;
+`;
+
+const Image = styled.img`
+  aspect-ratio: 1.73;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+`;
+
+const EventName = styled.div`
+  color: #eee;
+  margin-top: 24px;
+  white-space: nowrap;
+  font: 600 24px Manrope, sans-serif;
+`;
+
+const Location = styled.div`
+  color: #eee;
+  margin-top: 14px;
+  white-space: nowrap;
+  font: 400 20px Manrope, sans-serif;
+`;
+
+const Description = styled.div`
+  color: #eee;
+  margin-top: 20px;
+  font: 400 20px Manrope, sans-serif;
+`;
+
+export default cardRateUs;

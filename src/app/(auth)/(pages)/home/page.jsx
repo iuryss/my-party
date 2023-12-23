@@ -5,13 +5,14 @@ import Navbar from "../../../components/NavBar/navBar";
 import Carousel from '../../../components/Carousel/carousel';
 import SearchBar from '../../../components/SearchBar/searchBar';
 import PartyCards from '../../../components/PartyCards/partyCards';
-import {ContainerInfo, MainContainer, PartysContainer, SectionMyParty, TitleInfo, TextInfo, ButtonSection, SectionCards, CardsSectionTitle, TitleArea, SectionPartys, StyledSelect, SelectContainer, SectionHeader, ButtonMoreContent, SectionEventsRequest, TitleRequest, InfoRequest, SectionRateUs} from './styles'
+import {ContainerInfo, MainContainer, PartysContainer, SectionMyParty, TitleInfo, TextInfo, ButtonSection, SectionCards, CardsSectionTitle, TitleArea, SectionPartys, StyledSelect, SelectContainer, SectionHeader, ButtonMoreContent, SectionEventsRequest, TitleRequest, InfoRequest, SectionRateUs, ContainerSearchBox} from './styles'
 import Link from "next/link";
 import { defaultTexts } from "../../../../../utils/texts";
 import Button from "../../../components/Button/button";
 import SearchBox from "../../../components/SearchBox/searchBox";
 import CardsEvents from "../../../components/Cards/index.jsx";
 import CardRateUs from "../../../components/CardRateUs/index.jsx";
+import Footer from "../../../components/Footer/footer";
 
 
 export default function home () {
@@ -23,7 +24,7 @@ export default function home () {
         const day = Math.floor(Math.random() * 30) + 1;
         const month = Math.floor(Math.random() * 12) + 1;
         const year = Math.floor(Math.random() * 10) + 2015;
-        return `${day}/${month}/${year}`;
+        return `${day}`;
       }
     const cardsData = [
         {
@@ -45,19 +46,19 @@ export default function home () {
         title: 'Flowerss',
         location: 'Fortaleza, Ceara',
         description: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
-        imageUrl: 'caminho_da_imagem_1.jpg',
+        imageUrl: 'https://as1.ftcdn.net/v2/jpg/06/32/25/48/1000_F_632254843_tbDPM5EV6LGbeLNyU9DJso03qeXeX3zK.jpg',
       },
       {
         title: 'MP Halloween',
         location: 'Fortaleza, Ceara',
         description: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
-        imageUrl: 'caminho_da_imagem_1.jpg',
+        imageUrl: 'https://liftlearning.com/wp-content/uploads/2020/09/default-image.png',
       },
       {
         title: 'Trevo',
         location: 'Fortaleza, Ceara',
         description: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
-        imageUrl: 'caminho_da_imagem_1.jpg',
+        imageUrl: 'https://img.freepik.com/fotos-gratis/a-luz-brilhante-do-palco-ilumina-os-fas-de-rock-gerados-pela-ia_188544-37983.jpg?w=1060&t=st=1694986456~exp=1694987056~hmac=ba92bf0b39761649b8241ac88aba6fb4599dce7a3a3917ea3e91826b4ef1cca3',
       },
    ];
 
@@ -136,6 +137,7 @@ export default function home () {
                     <Button padding={"1.2em 1.8em"} buttonText={'Mais Detalhes'} radius={"30px"} buttonColor={'transparent'} border={'#fff 1px solid'} />
                   </ButtonSection>
                 </ContainerInfo>
+                <ContainerSearchBox>
                 <SearchBox />
                 {/* <SearchBar valueSearch={searchTerm} changeValueSearch={setSearchTerm} onSearch={() => handleSearch(searchTerm)} /> */}
                 {/* <PartysContainer>
@@ -151,6 +153,7 @@ export default function home () {
                     </Link>
                     ))}
                </PartysContainer> */}
+               </ContainerSearchBox>
             </MainContainer>
           </SectionMyParty>
           <TitleArea>
@@ -228,6 +231,7 @@ export default function home () {
               ))}
             </SectionCards>
           </SectionRateUs>
+          <Footer />
         </>
     )
 }

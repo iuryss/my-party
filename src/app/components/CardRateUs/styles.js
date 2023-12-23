@@ -32,6 +32,16 @@ export const CardContent = styled.div`
     text-align: center;
 }
 `
+export const CardRowContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5%; /* Use uma unidade relativa (por exemplo, %) para o padding */
+}
+`
+
 export const Text = styled.p`
     margin: 10px 0;
     font-size: 1em;

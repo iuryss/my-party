@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import {CardParty, Card, CardImage, CardContent, ContentDate, PartyName, Organizer} from './styles'
+import {CardParty, Card, CardImage, CardContent, ContentDate, PartyName, Organizer, CardRowContainer, CardContainerDate, TitleDate, CardInfoContainer} from './styles'
 
 const PartyCards = (props) => {
 
@@ -13,9 +13,16 @@ const PartyCards = (props) => {
             alt="Party Photo"
           />
           <CardContent>
-            <ContentDate>{props.date}</ContentDate>
-            <PartyName>{props.partyName}</PartyName>
-            <Organizer>{props.organizer}</Organizer>
+            <CardRowContainer>
+              <CardContainerDate>
+                <TitleDate>Mar</TitleDate>
+                <ContentDate>{props.date}</ContentDate>
+              </CardContainerDate>
+              <CardInfoContainer>
+                <PartyName>{props.partyName}</PartyName>
+                <Organizer>{props.organizer}</Organizer>
+              </CardInfoContainer>
+            </CardRowContainer>
           </CardContent>
       </Card>
     </CardParty>

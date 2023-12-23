@@ -82,7 +82,9 @@ export default function partys () {
                   <TitleInfo>MYPARTY</TitleInfo>
                   <TextInfo>{defaultTexts}</TextInfo>
                   <ButtonSection>
+                  <Link href={`/payment`}>
                     <Button padding={"1.2em 1.8em"} buttonText={'COMPRAR INGRESSO'} radius={"30px"} buttonColor={'#f5167ed9'} border={'none'} />
+                  </Link>
                   </ButtonSection>
                 </ContainerInfo>
                 <TicketBox />

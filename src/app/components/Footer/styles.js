@@ -243,11 +243,15 @@ export const Div19 = styled.div`
 `;
 
 export const Input = styled.input`
+  background-color: #fff;
   color: #959595;
   border-style: none;
   border-width: 1px;
   margin: auto -3px auto 0;
   font: 12.9px/16px "Jaldi", sans-serif;
+  &:focus {
+    outline: none;
+}
 `;
 
 export const Div20 = styled.div`

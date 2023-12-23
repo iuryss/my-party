@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const SearchBoxContainer = styled.div`
   position: absolute;
-  left:29%;
   top:31em;
   display: flex;
   justify-content: space-around;
